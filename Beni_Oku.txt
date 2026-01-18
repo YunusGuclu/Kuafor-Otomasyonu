@@ -1,0 +1,136 @@
+KLASÖR BİLGİLERİ
+
+Proje ve proje kaynak kodları Kuaför klasörü içerisinde bulunmaktadır.
+
+Projeye ait veritabanı dosyaları, Kuaför-bin-Debug klasörü içinde yer almaktadır.
+Toplamda 5 adet Access veritabanı dosyası bulunmaktadır.
+
+Projenin setup (kurulum) dosyası, Kuaför Otomasyonu adlı klasörün Debug dizini içerisindedir.
+
+⚙️ SETUP DOSYASI KURULUMU
+
+Kuaför Otomasyonu klasörüne giriniz.
+
+Debug klasörünü açınız.
+
+Setup dosyasına çift tıklayarak kurulumu başlatınız.
+
+🔴 Önemli:
+Kurulum sırasında Setup dosyasını mutlaka “Yönetici olarak çalıştır” seçeneği ile açınız.
+
+Kurulum esnasında yükleme klasörü seçme ekranında
+“Herkes” seçeneğini işaretleyerek kurulumu tamamlayınız.
+
+🔐 YÖNETİCİ OLARAK ÇALIŞTIRMA ZORUNLULUĞU
+
+Projede Access veritabanı kullanıldığı için yetki problemleri yaşanmaması adına:
+
+Setup kurulumu yönetici olarak yapılmalıdır.
+
+Uygulama yönetici olarak çalıştırılmalıdır.
+
+Bu sayede veritabanı erişim hataları oluşmaz ve sistem sorunsuz şekilde çalışır.
+
+💻 PROJE KODLARINI ÇALIŞTIRMA
+
+Proje setup üzerinden kurulduktan sonra,
+proje kodlarını bilgisayarınızda ilk kez çalıştırırken de yönetici olarak çalıştırmanız önerilir.
+
+Proje yönetici olarak çalıştırıldığında form ekranı dışına çıkabilir.
+Bu durumda:
+
+Projeyi kapatınız.
+
+Kuaför klasörüne girerek projeyi tekrar form ekranı üzerinden açınız.
+
+Tekrar çalıştırınız.
+
+Bu işlem sayesinde proje yönetici yetkileriyle doğru şekilde başlatılmış olur.
+
+⚠️ ÇOK ÖNEMLİ – VERİTABANI BİLGİSİ
+
+Projede Microsoft Access veritabanı kullanılmıştır.
+
+Kullanılan Access sürümü: Access 12.0
+
+Eğer bilgisayarınızda bu sürüm yüklü değilse aşağıdaki hatayla karşılaşabilirsiniz:
+
+“Microsoft.ACE.OLEDB.12.0 sağlayıcısı yerel makinede kayıtlı değil”
+
+Bu durum normaldir.
+
+✅ Çözüm
+
+Bilgisayarınıza Access 12.0 Database Engine kurmanız gerekmektedir.
+
+Bu nedenle proje klasörünün yanında
+AccessDatabaseEngine adlı WinRAR dosyası eklenmiştir.
+
+Eğer cihazınızda Access 12.0 yoksa:
+
+Bu dosyayı açınız.
+
+Kurulumu gerçekleştiriniz.
+
+Kurulumdan sonra proje veritabanı hatası olmadan sorunsuz çalışacaktır.
+
+🔑 GİRİŞ EKRANLARI
+
+Projede iki farklı kullanıcı girişi bulunmaktadır:
+
+Yönetici Girişi
+
+Personel Girişi
+
+👤 YÖNETİCİ GİRİŞİ
+
+Kullanıcı Adı: yönetici
+
+Şifre: 2312
+
+Bu bilgiler ilk giriş için rastgele atanmıştır.
+
+Yönetici:
+
+Kullanıcı adı ve şifreyi
+Yönetici Paneli → Hesap Yönetimi bölümünden değiştirebilir.
+
+Şifresini unutursa
+Şifremi Unuttum bölümünden şifresini öğrenebilir.
+
+👥 PERSONEL GİRİŞİ
+
+Personel kullanıcı adı ve şifreleri yönetici tarafından belirlenir.
+
+Yönetici, Personel Yönetimi bölümünden:
+
+Personel bilgilerini kaydeder
+
+Kullanıcı adı ve şifre tanımlar
+
+Personeller sadece kendilerine tanımlanan bilgilerle sisteme giriş yapabilir.
+
+Örnek Personel Girişi
+
+Sistemde örnek olarak tanımlanmış personel:
+
+Ad Soyad: Ali Ata
+
+Kullanıcı Adı: ali
+
+Şifre: 250900
+
+Bu bilgilerle Personel Paneline giriş yapılabilir.
+
+
+🔄 VERİTABANI GÜNCELLEME İŞLEMLERİ
+
+Veritabanında kayıtlı bilgileri güncellemek için:
+
+DataGridView üzerindeki ilgili kayda çift tıklanır.
+
+Bu işlem sonucunda:
+
+Ekle butonu otomatik olarak Güncelle butonuna dönüşür.
+
+Güncelle butonu ile seçili verinin bilgileri düzenlenerek veritabanına kaydedilir.
