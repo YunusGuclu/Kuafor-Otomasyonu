@@ -248,7 +248,7 @@ Personel kullanıcı adı ve şifreleri yönetici tarafından belirlenir.
 ## 👨‍💻 Geliştirici
 
 **Yunus Güçlü**  
-Software Enginer
+Software Engineer
 
 ---
 
